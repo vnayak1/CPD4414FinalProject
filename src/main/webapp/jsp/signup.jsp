@@ -23,7 +23,7 @@ pageEncoding="ISO-8859-1"%>
                 
 
 display:block;
-text-align:right;
+text-align:left;
 
 margin:5px;
 position:relative;
