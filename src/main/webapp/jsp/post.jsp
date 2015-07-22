@@ -43,6 +43,36 @@ pageEncoding="ISO-8859-1"%>
 	</div>
 	<div id="body">
 		<h3>Post your ad here!</h3>
+                
+                
+                
+                    <%
+                        if(session.getAttribute("name")==null) {
+                    %>
+                    
+                        <h1> You need to login first </h1>
+                        
+                    <%
+                        } else {
+                    %>
+                        
+                        <form action="/signup" method="post">
+                            <label for="image">Image<input type="file" value="" name="image" /></label><br>
+                            <label for="address">Address<input type="text" value="" name="address" /></label><br>
+                            <label for="city">City<input type="text" value="" name="city" /></label><br>
+                            <label for="country">Country<input type="text" value="" name="country" /></label><br>
+                            <label for="detail">Detail<input type="text" value="" name="detail" /></label><br>
+                            <label for="signup"><input type="submit" name="signup" value="Sign Up"></label>
+                        <form>
+                    <%
+                        }
+                    %>
+            
+                
+                
+                
+                
+                
 		
 	</div>
 	<div id="footer">
