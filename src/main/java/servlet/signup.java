@@ -102,14 +102,17 @@ public class signup extends HttpServlet {
         Connection conn = database.getConnection();
         Statement smt;
         try {
+            out.println("d");
             smt = conn.createStatement();
-            String sql = "INSERT INTO user (user_id, username, password,email,age) " + 
-           "VALUES (" + user_id + ", '" + username + "', '" + password + "','"+email+"','"+age+"')";
-             smt.executeUpdate(sql);
-             
+            String sql = "INSERT INTO user (user_id, username, password,email,age) "
+                    + "VALUES ('" + user_id + "', '" + username + "', '" + password + "','"+email+"','"+age+"')";
+            out.println("ddddd");
+            smt.executeUpdate(sql);
+             out.println("ddddddddddddddddddddddddd");
              response.sendRedirect("jsp/login.jsp");
          
         } catch (SQLException ex) {
+            
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
         
