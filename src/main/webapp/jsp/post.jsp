@@ -14,7 +14,7 @@ pageEncoding="ISO-8859-1"%>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Hairstyle</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body>
 	<div id="header">
