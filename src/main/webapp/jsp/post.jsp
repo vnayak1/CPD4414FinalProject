@@ -20,14 +20,14 @@ pageEncoding="ISO-8859-1"%>
 	<div id="header">
 		<div class="section">
 			<div class="logo">
-				<a href="index.html">Wish Finder</a>
+				<a href="../index.html">Wish Finder</a>
 			</div>
 			<ul>
 				<li>
-					<a href="index.html">home</a>
+					<a href="../index.html">home</a>
 				</li>
 				<li>
-					<a href="about.html">about</a>
+					<a href="../about.html">about</a>
 				</li>
 				<li class="selected">
 					<a href="post.jsp">Post Ads</a>
@@ -42,58 +42,8 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-		<h3>hairstyles</h3>
-		<ul>
-			<li>
-				<a href="#"><img src="images/hairstyle1.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle2.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle3.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle4.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle5.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle6.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle7.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle8.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle9.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle10.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle11.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle12.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle13.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle14.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle15.jpg" alt=""></a>
-			</li>
-			<li>
-				<a href="#"><img src="images/hairstyle16.jpg" alt=""></a>
-			</li>
-		</ul>
-		<a href="#" class="more">show more</a>
+		<h3>Post your ad here!</h3>
+		
 	</div>
 	<div id="footer">
 		<div>
@@ -104,7 +54,7 @@ pageEncoding="ISO-8859-1"%>
 				<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
 			</div>
 			<p>
-				&copy; copyright 2023 | all rights reserved.
+				&copy; copyright 2015 | all rights reserved.
 			</p>
 		</div>
 	</div>
