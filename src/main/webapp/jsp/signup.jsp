@@ -31,13 +31,13 @@ pageEncoding="ISO-8859-1"%>
 					<a href="../about.html">about</a>
 				</li>
 				<li>
-					<a href="../hairstyle.html">hairstyles</a>
+					<a href="post.jsp">Post Ads Here</a>
 				</li>
 				<li class="selected">
                                     <a href="signup.jsp">Sign Up</a>
 				</li>
 				<li>
-					<a href="../contact.html">Login</a>
+                                    <a href="login.jsp">Login</a>
 				</li>
 			</ul>
 		</div>
@@ -48,9 +48,14 @@ pageEncoding="ISO-8859-1"%>
                     <%
                         if(session.getAttribute("name")==null) {
                     %>
-                                   
-                        <h1>Username:<input type="text" value="<%= session.getAttribute("name") %>" /></h1>   
-                
+                    
+                    <form action="/signup" method="post">               
+                        <h1>User Id<input type="text" value="" name="user_id" /></h1>
+                        <h1>Username<input type="text" value="" name="username" /></h1>
+                        <h1>Password<input type="text" value="" name="password" /></h1>
+                        <h1>Email<input type="text" value="" name="email" /></h1>
+                        <h1>Age<input type="text" value="" name="age" /></h1>
+                    <form>
                     <%
                         } else {
                     %>
