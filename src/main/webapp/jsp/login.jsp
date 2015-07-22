@@ -31,7 +31,7 @@ pageEncoding="ISO-8859-1"%>
 					<a href="../about.html">about</a>
 				</li>
 				<li>
-					<a href="post.jsp">Post Ads Here</a>
+					<a href="post.jsp">Post Ads</a>
 				</li>
 				<li>
                                     <a href="signup.jsp">Sign Up</a>

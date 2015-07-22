@@ -13,6 +13,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import DatabaseCredentials.database;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -92,6 +98,21 @@ public class signup extends HttpServlet {
         out.println(password);
         out.println(email);
         out.println(age);
+        
+        Connection conn = database.getConnection();
+        Statement smt;
+        try {
+            smt = conn.createStatement();
+            String sql = "INSERT INTO user (user_id, username, password,email,age) " + 
+           "VALUES (" + user_id + ", '" + username + "', '" + password + "','"+email+"','"+age+"')";
+             smt.executeUpdate(sql);
+             
+             response.sendRedirect("jsp/login.jsp");
+         
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 
     /**
