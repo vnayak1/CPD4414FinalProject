@@ -25,8 +25,8 @@ public class database {
         }
 
         try {
-            String jdbc = "jdbc:mysql://127.4.138.130:3306/wishfinder";
-            conn = DriverManager.getConnection(jdbc, "adminHCkpPtf", "RrTwyh6hiYRY");
+            String jdbc = "jdbc:mysql://127.9.164.130:3306/wishfinder";
+            conn = DriverManager.getConnection(jdbc, "admin4VJHxNT", "yrrr4jjN7-zs");
         } catch (SQLException ex) {
             System.err.println("Failed to Connect: " + ex.getMessage());
         }
