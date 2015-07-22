@@ -16,6 +16,25 @@ pageEncoding="ISO-8859-1"%>
 	
 	<title>News</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
+        
+        <style type="text/css">
+            
+            label{
+                
+
+display:block;
+text-align:right;
+
+margin:5px;
+position:relative;
+margin-left:5px;
+margin-right:0px;
+
+
+
+            }
+            
+        </style>
 </head>
 <body>
 	<div id="header">
@@ -50,11 +69,11 @@ pageEncoding="ISO-8859-1"%>
                     %>
                     
                     <form action="/signup" method="post">               
-                        <label for="user_id" >User Id</label><input type="text" value="" id="user_id" name="user_id"/><br>
-                        <label for="username">Username</label><input type="text" value="" id ="username" name="username" /><br>
-                        <label for="password">Password</label><input type="text" value="" name="password" /><br>
-                        <label for="email">Email</label><input type="text" value="" name="email" /><br>
-                        <label for="age">Age</label><input type="text" value="" name="age" /><br>
+                        <label for="user_id" >User Id<input type="text" value="" id="user_id" name="user_id"/></label><br>
+                        <label for="username">Username<input type="text" value="" id ="username" name="username" /></label><br>
+                        <label for="password">Password<input type="text" value="" name="password" /></label><br>
+                        <label for="email">Email<input type="text" value="" name="email" /></label><br>
+                        <label for="age">Age<input type="text" value="" name="age" /></label><br>
                         <input type="submit" name="signup" value="Sign Up">
                     <form>
                     <%
