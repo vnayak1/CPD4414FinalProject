@@ -22,13 +22,13 @@ pageEncoding="ISO-8859-1"%>
             label{
                 
 
-display:block;
-text-align:left;
+                    display:block;
+                    text-align:right;
 
-margin:5px;
-position:relative;
-margin-left:5px;
-margin-right:0px;
+                    margin:5px;
+                    position:relative;
+                    margin-left:5px;
+                    margin-right:0px;
 
 
 
@@ -74,7 +74,7 @@ margin-right:0px;
                         <label for="password">Password<input type="text" value="" name="password" /></label><br>
                         <label for="email">Email<input type="text" value="" name="email" /></label><br>
                         <label for="age">Age<input type="text" value="" name="age" /></label><br>
-                        <input type="submit" name="signup" value="Sign Up">
+                        <label for="signup"><input type="submit" name="signup" value="Sign Up"></label>
                     <form>
                     <%
                         } else {
