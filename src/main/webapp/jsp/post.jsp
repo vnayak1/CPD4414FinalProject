@@ -15,6 +15,25 @@ pageEncoding="ISO-8859-1"%>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Hairstyle</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
+        
+                <style type="text/css">
+            
+            label{
+                
+
+                    display:block;
+                    text-align:right;
+
+                    margin:5px;
+                    position:relative;
+                    margin-left:5px;
+                    margin-right:0px;
+
+
+
+            }
+            
+        </style>
 </head>
 <body>
 	<div id="header">
@@ -57,11 +76,11 @@ pageEncoding="ISO-8859-1"%>
                     %>
                         
                         <form action="/signup" method="post">
-                            <label for="image">Image<input type="file" value="" name="image" /></label><br>
-                            <label for="address">Address<input type="text" value="" name="address" /></label><br>
-                            <label for="city">City<input type="text" value="" name="city" /></label><br>
-                            <label for="country">Country<input type="text" value="" name="country" /></label><br>
-                            <label for="detail">Detail<input type="text" value="" name="detail" /></label><br>
+                            <label for="image">Image<input type="file" value="" name="image" required/></label><br>
+                            <label for="address">Address<input type="text" value="" name="address" required/></label><br>
+                            <label for="city">City<input type="text" value="" name="city" required/></label><br>
+                            <label for="country">Country<input type="text" value="" name="country" required/></label><br>
+                            <label for="detail">Detail<input type="text" value="" name="detail" required/></label><br>
                             <label for="signup"><input type="submit" name="signup" value="Sign Up"></label>
                         <form>
                     <%
