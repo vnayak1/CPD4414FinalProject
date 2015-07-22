@@ -50,11 +50,11 @@ pageEncoding="ISO-8859-1"%>
                     %>
                     
                     <form action="/signup" method="post">               
-                        <h1>User Id:<input type="text" value="" name="user_id" /></h1>
-                        <h1>Username:<input type="text" value="" name="username" /></h1>
-                        <h1>Password:<input type="text" value="" name="password" /></h1>
-                        <h1>Email:<input type="text" value="" name="email" /></h1>
-                        <h1>Age:<input type="text" value="" name="age" /></h1>
+                        <label for="user_id"><input type="text" value="" name="user_id" /></label>
+                        <label for="username"><input type="text" value="" name="username" /></label>
+                        <label for="password"><input type="text" value="" name="password" /></label>
+                        <label for="email"><input type="text" value="" name="email" /></label>
+                        <label for="age"><input type="text" value="" name="age" /></label>
                         <input type="submit" name="signup" value="Sign Up">
                     <form>
                     <%
