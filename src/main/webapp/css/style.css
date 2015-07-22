@@ -14,6 +14,13 @@
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.eot');
 	src: url('../fonts/Comfortaa/Comfortaa-Regular.woff') format('woff'), url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'), url('../fonts/Comfortaa/Comfortaa-Regular.svg') format('svg');
 }
+
+
+#logo{
+    
+       font-size: 25px;
+    
+}
 body {
 	background: #ededed url(../images/bg-header.gif) repeat-x top center;
 	line-height: 1;
@@ -43,7 +50,7 @@ body {
 	color: #fff;
 	display: block;
 	font-family: 'Arimo-Bold';
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: normal;
 	height: 130px;
 	line-height: 130px;
