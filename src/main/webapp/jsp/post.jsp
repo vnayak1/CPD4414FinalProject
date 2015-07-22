@@ -75,7 +75,7 @@ pageEncoding="ISO-8859-1"%>
                         } else {
                     %>
                         
-                        <form action="/signup" method="post">
+                        <form action="/postad" method="post">
                             <label for="image">Image<input type="file" value="" name="image" required/></label><br>
                             <label for="address">Address<input type="text" value="" name="address" required/></label><br>
                             <label for="city">City<input type="text" value="" name="city" required/></label><br>
