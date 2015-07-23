@@ -27,7 +27,7 @@ pageEncoding="ISO-8859-1"%>
                     margin:5px;
                     position:relative;
                     margin-left:5px;
-                    margin-right:50px;
+                    margin-right:150px;
 
 
 
@@ -84,7 +84,7 @@ pageEncoding="ISO-8859-1"%>
                             <label for="city">City<input type="text" value="" name="city" required/></label><br>
                             <label for="country">Country<input type="text" value="" name="country" required/></label><br>
                             <label for="detail">Detail<input type="text" value="" name="detail" required/></label><br>
-                            <label for="signup"><input type="submit" name="signup" value="Sign Up"></label>
+                            <label for="signup"><input type="submit" name="signup" value="Post It!"></label>
                         <form>
                     <%
                         }
