@@ -72,7 +72,7 @@ pageEncoding="ISO-8859-1"%>
                         
                         
                         <%
-                        if(session.getAttribute("data")==null) {
+                        if(session.getAttribute("city")==null) {
                     %>
                                    
                          
