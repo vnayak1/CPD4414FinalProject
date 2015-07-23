@@ -117,23 +117,23 @@ pageEncoding="ISO-8859-1"%>
              
                 <table>
                     <tr>
-                        <td rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="100" height="100"/><td>  
+                        <td rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
                         
                     </tr>
                     <tr>
-                        <td><h1><%=id%></h1></td>
+                        <td><h3><%=id%></h3></td>
                     </tr>
                     <tr>
-                        <td><h1><%=address%></h1></td>
+                        <td><h3><%=address%></h3></td>
                     </tr>
                     <tr>
-                        <td><h1><%=city_display%></h1></td>
+                        <td><h3><%=city_display%></h3></td>
                     </tr>
                     <tr>
-                        <td><h1><%=country_display%></h1></td>
+                        <td><h3><%=country_display%></h3></td>
                     </tr>
                     <tr>
-                        <td><h1><%=detail%></h1></td>
+                        <td><h3><%=detail%></h3></td>
                     </tr>
                 </table>
            
