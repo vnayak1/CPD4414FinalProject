@@ -61,7 +61,7 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-		<h3>Post your ad here!</h3>
+                        <label><h3>Post your ad here!</h3></label>
                 
                 
                 

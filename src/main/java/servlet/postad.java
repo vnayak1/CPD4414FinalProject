@@ -156,7 +156,7 @@ public class postad extends HttpServlet {
                
                 HttpSession  success = request.getSession(true);
                 success.setAttribute("success_message","Your Ad is posted successfully!");
-                response.sendRedirect("jsp/signup.jsp");
+                response.sendRedirect("jsp/success.jsp");
            }
         } catch (SQLException ex) {
             message = "ERROR: " + ex.getMessage();
