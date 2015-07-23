@@ -95,7 +95,8 @@ pageEncoding="ISO-8859-1"%>
                 {
                     
                     
-                    String city = request.getParameter("city");
+                    
+                    String city = (String)session.getAttribute("city");
                     String country = request.getParameter("country");
                     
                 Statement smt = conn.createStatement();
@@ -108,7 +109,7 @@ pageEncoding="ISO-8859-1"%>
           
            
                 %>
-                <
+                
                 <h1><%=city%></h1>
                 <h1><%=country%></h1>
                 <h1><%=id%></h1>

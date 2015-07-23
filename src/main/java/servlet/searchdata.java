@@ -78,7 +78,10 @@ public class searchdata extends HttpServlet {
             throws ServletException, IOException {
      //   processRequest(request, response);
         HttpSession  searchdatafor = request.getSession(true);
-        searchdatafor.setAttribute("data","data");
+        
+        String city= request.getParameter("city");
+             
+        searchdatafor.setAttribute("city",city);
                 
         
         response.sendRedirect("index.jsp");
