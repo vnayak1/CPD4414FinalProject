@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import DatabaseCredentials.database;
+import java.io.File;
+import java.io.FileInputStream;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 /**
@@ -89,26 +91,33 @@ public class postad extends HttpServlet {
         
         
         
-        
+        String image1 = request.getParameter("image");
         String user_id = request.getParameter("user_id");
         String address = request.getParameter("address");
         String city = request.getParameter("city");
         String country = request.getParameter("country");
         String detail = request.getParameter("detail");
+        
+        out.println(image1);
+        out.println(user_id);
+        out.println(address);
+        out.println(city);
+        out.println(country);
+        out.println(detail);
          
         InputStream inputStream = null; // input stream of the upload file
          
         // obtains the upload file part in this multipart request
-        Part filePart = request.getPart("image");
-        if (filePart != null) {
-            // prints out some information for debugging
-            System.out.println(filePart.getName());
-            System.out.println(filePart.getSize());
-            System.out.println(filePart.getContentType());
-             
-            // obtains input stream of the upload file
-            inputStream = filePart.getInputStream();
-        }
+//        Part filePart = request.getPart("image");
+//        if (filePart != null) {
+//            // prints out some information for debugging
+//            System.out.println(filePart.getName());
+//            System.out.println(filePart.getSize());
+//            System.out.println(filePart.getContentType());
+//             
+//            // obtains input stream of the upload file
+//            inputStream = filePart.getInputStream();
+//        }
          
         Connection conn = null; // connection to the database
         String message = null;  // message will be sent back to client
@@ -119,26 +128,31 @@ public class postad extends HttpServlet {
             conn = database.getConnection();
  
             // constructs SQL statement
-            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?, ?,?,?,?)";
+            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?,?,?,?,?)";
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, user_id);
             
              
-            if (inputStream != null) {
-                // fetches input stream of the upload file for the blob column
-                statement.setBlob(2, inputStream);
-            }
+                File image = new File(image1);
+                FileInputStream   fis = new FileInputStream(image);
+                statement.setBinaryStream(2, fis, (int) image.length());
+                statement.execute();
+//            if (inputStream != null) {
+//                
+//                statement.setBlob(2, inputStream);
+//            }
             statement.setString(3, address);
             statement.setString(4, city);
             statement.setString(5, country);
             statement.setString(6, detail);
  
             // sends the statement to the database server
-            int row = statement.executeUpdate();
-            if (row > 0) {
-                message = "File uploaded and saved into database";
-                out.println("Success");
-            }
+           // int row = statement.executeUpdate();
+//            
+//            if (row > 0) {
+//                message = "File uploaded and saved into database";
+//                out.println("Success");
+//            }
         } catch (SQLException ex) {
             message = "ERROR: " + ex.getMessage();
             ex.printStackTrace();
@@ -158,21 +172,7 @@ public class postad extends HttpServlet {
             // forwards to the message page
           //  getServletContext().getRequestDispatcher("/Message.jsp").forward(request, response);
         
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+          
         out.println("hiiiiiiiiiiiiiiiiiiiiiiiiiiii");
         
         
