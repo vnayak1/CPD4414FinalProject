@@ -157,6 +157,8 @@ public class postad extends HttpServlet {
 //            }
         } catch (SQLException ex) {
             message = "ERROR: " + ex.getMessage();
+           out.println("Exception");
+           out.println(message);
             ex.printStackTrace();
         } finally {
             if (conn != null) {
