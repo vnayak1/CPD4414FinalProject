@@ -49,7 +49,7 @@ pageEncoding="ISO-8859-1"%>
 					<a href="about.html">about</a>
 				</li>
 				<li>
-					<a href="../jsppost.jsp">Post Ads</a>
+					<a href="../jsp/post.jsp">Post Ads</a>
 				</li>
 				<li>
                                     <a href="../jsp/signup.jsp">Sign Up</a>
@@ -61,7 +61,42 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-            <img src="img.jsp" width="50" height="50">  
+            
+                       <%
+                
+                Connection conn = DatabaseCredentials.database.getConnection();
+                
+                if(conn==null)
+                {
+            %>
+                <h1> Fail</h1>
+            <%    
+                }else{
+             
+            %>
+                <h1>Success</h1>
+                <% 
+                Statement smt = conn.createStatement();
+                String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad";
+                ResultSet rs = smt.executeQuery(query);
+                 while (rs.next()) {
+                String id = rs.getString("user_id");
+                int post_id = rs.getInt("user_post_id");
+                
+          
+           
+                %>
+                <h1><%=id%></h1>
+                <img src="img.jsp?id=post_id" width="50" height="50">  
+                
+                
+           
+            <%
+               
+                 }
+                }
+            %>
+           
                
 	</div>	
 	<div id="footer">

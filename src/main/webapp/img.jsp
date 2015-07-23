@@ -20,7 +20,7 @@
     <body>
      
                 <%
-                
+                int img_id = Integer.parseInt(request.getParameter("id"));
                 Connection conn = DatabaseCredentials.database.getConnection();
                 
                 if(conn==null)
@@ -34,7 +34,7 @@
                 <h1>Success</h1>
                 <% 
                 Statement smt = conn.createStatement();
-                String query = "select user_id,image,address,city,country,detail from post_ad";
+                String query = "select image from post_ad where user_post_id ='"+img_id+"'";
                 ResultSet rs = smt.executeQuery(query);
                  while (rs.next()) {
                 String id = rs.getString("user_id");
@@ -52,7 +52,7 @@
            
                 %>
                 <h1><%=id%></h1>
-                <img src="index.jsp?your_id=12" width="50" height="50" />
+               
                 
                 
            
