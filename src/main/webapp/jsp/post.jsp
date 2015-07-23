@@ -77,7 +77,7 @@ pageEncoding="ISO-8859-1"%>
                         
                     
                             
-                        <form action="/postad" method="post">
+                        <form action="/postad" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="user_id" value="<%session.getAttribute("name");%>">
                             <label for="image">Image<input type="file" value="" name="image" required/></label><br>
                             <label for="address">Address<input type="text" value="" name="address" required/></label><br>
