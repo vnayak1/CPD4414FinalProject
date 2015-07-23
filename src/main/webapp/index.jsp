@@ -4,6 +4,9 @@
     Author     : vinayak
 --%>
 <%@page import="java.sql.Connection"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.Statement"%>
 <%-- 
     Document   : news
     Created on : 21-Jul-2015, 7:00:39 PM
@@ -62,13 +65,24 @@ pageEncoding="ISO-8859-1"%>
                 if(conn==null)
                 {
             %>
-                <h1> success</h1>
+                <h1> Fail</h1>
             <%    
                 }else{
              
             %>
-                <h1>Fail</h1>
+                <h1>Success</h1>
+                <% 
+                Statement smt = conn.createStatement();
+                String query = "select user_id,image,address,city,country,detail from post_ad";
+                ResultSet rs = smt.executeQuery(query);
+                 while (rs.next()) {
+                String id = rs.getString("user_id");
+                %>
+                <h1><%=id%></h1>
+                
+           
             <%
+                 }
                 }
             %>    
                
