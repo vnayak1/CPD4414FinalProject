@@ -93,7 +93,7 @@ pageEncoding="ISO-8859-1"%>
            
                 %>
                 <h1><%=id%></h1>
-                <%= os.write(buf)%>
+                <%= buf%>
                 
            
             <%
