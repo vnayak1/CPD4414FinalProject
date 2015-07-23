@@ -84,7 +84,7 @@ public class searchdata extends HttpServlet {
         String country = request.getParameter("country");
              
         searchcity.setAttribute("city",city);
-        searchcountry.setAttribute("city",country);
+        searchcountry.setAttribute("country",country);
                 
         
         response.sendRedirect("index.jsp");
