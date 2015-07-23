@@ -115,25 +115,26 @@ pageEncoding="ISO-8859-1"%>
                 %>
                 
              
+                <br><br><br>
                 <table>
                     <tr>
                         <td rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
                         
                     </tr>
                     <tr>
-                        <td><%=id%></td>
+                        <td>User: <%=id%></td>
                     </tr>
                     <tr>
-                        <td><%=address%></td>
+                        <td>Address: <%=address%></td>
                     </tr>
                     <tr>
-                        <td><%=city_display%></td>
+                        <td>City: <%=city_display%></td>
                     </tr>
                     <tr>
-                        <td><%=country_display%></td>
+                        <td>Country: <%=country_display%></td>
                     </tr>
                     <tr>
-                        <td><%=detail%></td>
+                        <td>Detail about ad: <%=detail%></td>
                     </tr>
                 </table>
            
