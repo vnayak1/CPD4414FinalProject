@@ -72,7 +72,7 @@ pageEncoding="ISO-8859-1"%>
                         
                         
                         <%
-                        if(session.getAttribute("city")==null) {
+                        if(session.getAttribute("city")==null || session.getAttribute("country")==null) {
                     %>
                                    
                          
@@ -100,7 +100,7 @@ pageEncoding="ISO-8859-1"%>
                     String country = request.getParameter("country");
                     
                 Statement smt = conn.createStatement();
-                String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad";
+                String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad where city='"+city+"' and country = '"+country+"'";
                 ResultSet rs = smt.executeQuery(query);
                  while (rs.next()) {
                 String id = rs.getString("user_id");

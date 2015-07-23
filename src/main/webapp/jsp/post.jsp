@@ -40,7 +40,7 @@ pageEncoding="ISO-8859-1"%>
 			</div>
 			<ul>
 				<li>
-					<a href="../index.html">home</a>
+					<a href="../index.jsp">home</a>
 				</li>
 				<li>
 					<a href="../about.html">about</a>
