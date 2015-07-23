@@ -18,9 +18,8 @@ pageEncoding="ISO-8859-1"%>
         
                 <style type="text/css">
             
-            label{
+                    label{
                 
-
                     display:block;
                     text-align:right;
 
@@ -29,10 +28,8 @@ pageEncoding="ISO-8859-1"%>
                     margin-left:5px;
                     margin-right:15px;
 
-
-
-            }
-          
+                }
+                
         </style>
 </head>
 <body>
@@ -84,7 +81,7 @@ pageEncoding="ISO-8859-1"%>
                             <label for="city">City<input type="text" value="" name="city" required/></label><br>
                             <label for="country">Country<input type="text" value="" name="country" required/></label><br>
                             <label for="detail">Detail<input type="text" value="" name="detail" required/></label><br>
-                            <label for="signup"><input type="submit" name="signup" value="Post It!"></label>
+                            <label for="signup"><input type="submit" name="signup" value="Post It"></label>
                         <form>
                     <%
                         }
