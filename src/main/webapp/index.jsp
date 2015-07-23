@@ -75,7 +75,7 @@ pageEncoding="ISO-8859-1"%>
                         if(session.getAttribute("city")==null || session.getAttribute("country")==null) {
                     %>
                                    
-                    <h1>Fail </h1>
+                    
                 
                     <%
                         } else {
@@ -117,7 +117,10 @@ pageEncoding="ISO-8859-1"%>
              
                 <table>
                     <tr>
-                        <td rowspan="4"><img src="img.jsp?iid=<%=post_id%>" width="100" height="100"/><td>  
+                        <td rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="100" height="100"/><td>  
+                        
+                    </tr>
+                    <tr>
                         <td><h1><%=id%></h1></td>
                     </tr>
                     <tr>
