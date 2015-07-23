@@ -132,7 +132,7 @@ public class postad extends HttpServlet {
             // constructs SQL statement
             String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?,?,?,?,?)";
             PreparedStatement statement = conn.prepareStatement(sql);
-            statement.setString(1, "hi");
+            statement.setString(1, user_id);
             
              
 //                File image = new File(image1);
