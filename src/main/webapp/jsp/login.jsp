@@ -16,6 +16,25 @@ pageEncoding="ISO-8859-1"%>
 	
 	<title>News</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
+        
+                <style type="text/css">
+            
+            label{
+                
+
+                    display:block;
+                    text-align:right;
+
+                    margin:5px;
+                    position:relative;
+                    margin-left:5px;
+                    margin-right:0px;
+
+
+
+            }
+            
+        </style>
 </head>
 <body>
 	<div id="header">
@@ -46,9 +65,9 @@ pageEncoding="ISO-8859-1"%>
                     
             
                                     <form action="/login" method="post">
-              Username:  <input type="text" id="username" name="username" value="vinayak" required>
-              Password:  <input type="password" id="password" name="password" value="vinayak" required>
-                         <input type="submit" name="submit" id="submit">
+                                        <label for="username"> Username:  <input type="text" id="username" name="username" value="vinayak" required></label><br>
+                                        <label for="password">Password:  <input type="password" id="password" name="password" value="vinayak" required></label><br>
+                         <label for="submit"><input type="submit" name="submit" id="submit"></label>
                     </form>
                     
                
