@@ -121,19 +121,19 @@ pageEncoding="ISO-8859-1"%>
                         
                     </tr>
                     <tr>
-                        <td><h3><%=id%></h3></td>
+                        <td><%=id%></td>
                     </tr>
                     <tr>
-                        <td><h3><%=address%></h3></td>
+                        <td><%=address%></td>
                     </tr>
                     <tr>
-                        <td><h3><%=city_display%></h3></td>
+                        <td><%=city_display%></td>
                     </tr>
                     <tr>
-                        <td><h3><%=country_display%></h3></td>
+                        <td><%=country_display%></td>
                     </tr>
                     <tr>
-                        <td><h3><%=detail%></h3></td>
+                        <td><%=detail%></td>
                     </tr>
                 </table>
            
