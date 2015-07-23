@@ -97,7 +97,7 @@ pageEncoding="ISO-8859-1"%>
                     
                     
                     String city = (String)session.getAttribute("city");
-                    String country = (String)request.getAttribute("country");
+                    String country = (String)session.getAttribute("country");
                     
                 Statement smt = conn.createStatement();
                 String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad where city='"+city+"' and country = '"+country+"'";
