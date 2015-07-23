@@ -48,7 +48,7 @@ pageEncoding="ISO-8859-1"%>
                                     <a href="signup.jsp">Sign Up</a>
 				</li>
 				<li>
-                                    <a href="login.jsp">Login</a>
+                                    <a href="../jsp/login.jsp">Login</a>
 				</li>
 			</ul>
 		</div>
