@@ -61,48 +61,7 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-            <%
-                
-                Connection conn = DatabaseCredentials.database.getConnection();
-                
-                if(conn==null)
-                {
-            %>
-                <h1> Fail</h1>
-            <%    
-                }else{
-             
-            %>
-                <h1>Success</h1>
-                <% 
-                Statement smt = conn.createStatement();
-                String query = "select user_id,image,address,city,country,detail from post_ad";
-                ResultSet rs = smt.executeQuery(query);
-                 while (rs.next()) {
-                String id = rs.getString("user_id");
-                
-                  Blob  b = rs.getBlob("image");            
-            response.setContentType("image/jpeg");
-            response.setContentLength( (int) b.length());
-           // response.setContentLength(10);
-            InputStream is = b.getBinaryStream();
-            OutputStream os = response.getOutputStream();
-            byte buf[] = new byte[(int) b.length()];
-            is.read(buf);
-            
-           //os.write(buf);
-           
-                %>
-                <h1><%=id%></h1>
-                <%=out.write("hi")%>
-                
-                
-           
-            <%
-                os.close();
-                 }
-                }
-            %>    
+            <img src="img.jsp" width="50" height="50">  
                
 	</div>	
 	<div id="footer">
