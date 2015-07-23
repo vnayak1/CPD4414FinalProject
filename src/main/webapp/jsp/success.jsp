@@ -1,4 +1,10 @@
 <%-- 
+    Document   : success
+    Created on : 22-Jul-2015, 11:40:19 PM
+    Author     : vinayak
+--%>
+
+<%-- 
     Document   : post
     Created on : 22-Jul-2015, 2:17:09 AM
     Author     : vinayak
@@ -18,26 +24,7 @@ pageEncoding="ISO-8859-1"%>
         
                 <style type="text/css">
             
-            label{
-                
-
-                    display:block;
-                    text-align:right;
-
-                    margin:5px;
-                    position:relative;
-                    margin-left:5px;
-                    margin-right:150px;
-
-
-
-            }
-            #imagelabel{
-                
-                
-                
-                margin-left:150px;
-            }
+            
         </style>
 </head>
 <body>
@@ -53,7 +40,7 @@ pageEncoding="ISO-8859-1"%>
 				<li>
 					<a href="../about.html">about</a>
 				</li>
-				<li class="selected">
+				<li>
 					<a href="post.jsp">Post Ads</a>
 				</li>
 				<li>
@@ -66,31 +53,21 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-		<h3>Post your ad here!</h3>
+		
                 
                 
                 
                     <%
-                        if(session.getAttribute("name")==null) {
+                        if(session.getAttribute("success_message")==null) {
                     %>
                     
-                        <h1> You need to login first </h1>
+                       
                         
                     <%
-                        } else {session.getAttribute("name");
+                        } else{
                     %>
                         
-                    
-                            
-                        <form action="/postad" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="user_id" value="<%=session.getAttribute("name")%>">
-                            <label id="imagelabel" for="image">Image<input type="file" value="" name="image" required/></label><br>
-                            <label for="address">Address<input type="text" value="" name="address" required/></label><br>
-                            <label for="city">City<input type="text" value="" name="city" required/></label><br>
-                            <label for="country">Country<input type="text" value="" name="country" required/></label><br>
-                            <label for="detail">Detail<input type="text" value="" name="detail" required/></label><br>
-                            <label for="signup"><input type="submit" name="signup" value="Post It!"></label>
-                        <form>
+     
                     <%
                         }
                     %>

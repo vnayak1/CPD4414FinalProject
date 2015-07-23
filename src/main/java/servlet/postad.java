@@ -21,6 +21,7 @@ import java.io.FileInputStream;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.http.HttpSession;
 /**
  *
  * @author vinayak
@@ -150,11 +151,13 @@ public class postad extends HttpServlet {
  
             // sends the statement to the database server
            int row = statement.executeUpdate();
-//            
-//            if (row > 0) {
-//                message = "File uploaded and saved into database";
-//                out.println("Success");
-//            }
+            
+            if (row > 0) {
+               
+                HttpSession  success = request.getSession(true);
+                success.setAttribute("success_message","Your Ad is posted successfully!");
+
+           }
         } catch (SQLException ex) {
             message = "ERROR: " + ex.getMessage();
            out.println("Exception");
