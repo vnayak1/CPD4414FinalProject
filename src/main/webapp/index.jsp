@@ -90,11 +90,11 @@ pageEncoding="ISO-8859-1"%>
             byte buf[] = new byte[(int) b.length()];
             is.read(buf);
             
-           os.write(buf);
+           //os.write(buf);
            
                 %>
                 <h1><%=id%></h1>
-                <%=b%>
+                <%=out.write("hi")%>
                 
                 
            
