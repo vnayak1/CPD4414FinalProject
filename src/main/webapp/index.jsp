@@ -61,6 +61,13 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
+                    <form action="/searchdata" method="post">
+            City : <input type="text" name="city" value="sarnia">
+            Country :<input type="text" name="country" value="canada">
+                    <input type="submit" name="find" value="Find">
+                    <form>
+            
+            
             
                        <%
                 
