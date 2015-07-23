@@ -61,7 +61,7 @@ pageEncoding="ISO-8859-1"%>
                         if(session.getAttribute("success_message")==null) {
                     %>
                     
-                       
+                       <h1><%=session.getAttribute("success_message")%></h1>
                         
                     <%
                         } else{

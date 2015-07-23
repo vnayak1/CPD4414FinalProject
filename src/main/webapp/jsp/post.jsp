@@ -27,17 +27,12 @@ pageEncoding="ISO-8859-1"%>
                     margin:5px;
                     position:relative;
                     margin-left:5px;
-                    margin-right:150px;
+                    margin-right:15px;
 
 
 
             }
-            #imagelabel{
-                
-                
-                
-                margin-left:150px;
-            }
+          
         </style>
 </head>
 <body>
@@ -74,7 +69,7 @@ pageEncoding="ISO-8859-1"%>
                         if(session.getAttribute("name")==null) {
                     %>
                     
-                        <h1> You need to login first </h1>
+                    <label><h1> You need to login first </h1></label>
                         
                     <%
                         } else {session.getAttribute("name");
