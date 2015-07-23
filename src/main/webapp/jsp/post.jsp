@@ -72,9 +72,11 @@ pageEncoding="ISO-8859-1"%>
                         <h1> You need to login first </h1>
                         
                     <%
-                        } else {
+                        } else {session.getAttribute("name");
                     %>
                         
+                    
+                            
                         <form action="/postad" method="post">
                             <input type="hidden" name="user_id" value="<%session.getAttribute("name");%>">
                             <label for="image">Image<input type="file" value="" name="image" required/></label><br>

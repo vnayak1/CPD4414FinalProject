@@ -20,11 +20,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import javax.servlet.annotation.MultipartConfig;
 /**
  *
  * @author vinayak
  */
 @WebServlet(name = "postad", urlPatterns = {"/postad"})
+@MultipartConfig(maxFileSize = 16177215)
 public class postad extends HttpServlet {
 
     /**
