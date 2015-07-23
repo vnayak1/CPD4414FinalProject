@@ -3,6 +3,9 @@
     Created on : 23-Jul-2015, 1:10:06 AM
     Author     : vinayak
 --%>
+<%@page import="java.io.OutputStream"%>
+<%@page import="java.io.InputStream"%>
+<%@page import="java.sql.Blob"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.SQLException"%>
@@ -77,11 +80,24 @@ pageEncoding="ISO-8859-1"%>
                 ResultSet rs = smt.executeQuery(query);
                  while (rs.next()) {
                 String id = rs.getString("user_id");
+                
+                  Blob  b = rs.getBlob("image");            
+            response.setContentType("image/jpeg");
+            response.setContentLength( (int) b.length());
+           // response.setContentLength(10);
+            InputStream is = b.getBinaryStream();
+            OutputStream os = response.getOutputStream();
+            byte buf[] = new byte[(int) b.length()];
+            is.read(buf);
+           
+           
                 %>
                 <h1><%=id%></h1>
+                <%= os.write(buf)%>
                 
            
             <%
+                os.close();
                  }
                 }
             %>    
