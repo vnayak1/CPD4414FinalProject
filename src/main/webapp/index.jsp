@@ -75,7 +75,7 @@ pageEncoding="ISO-8859-1"%>
                         if(session.getAttribute("city")==null || session.getAttribute("country")==null) {
                     %>
                                    
-                         
+                         <h1>fail</h1>
                 
                     <%
                         } else {
