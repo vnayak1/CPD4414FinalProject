@@ -63,7 +63,7 @@ pageEncoding="ISO-8859-1"%>
 	<div id="body">
                     <form action="/searchdata" method="post">
             City  <input type="text" name="city" value="sarnia">
-            Country  <input type="text" name="country" value="canada">
+            Country <input type="text" name="country" value="canada">
                     <input type="submit" name="find" value="Find">
                     <form>
             
@@ -93,7 +93,11 @@ pageEncoding="ISO-8859-1"%>
                 
                 else
                 {
-            
+                    
+                    
+                    String city = request.getParameter("city");
+                    String country = request.getParameter("country");
+                    
                 Statement smt = conn.createStatement();
                 String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad";
                 ResultSet rs = smt.executeQuery(query);
@@ -104,6 +108,9 @@ pageEncoding="ISO-8859-1"%>
           
            
                 %>
+                <
+                <h1><%=city%></h1>
+                <h1><%=country%></h1>
                 <h1><%=id%></h1>
                 <h1><%=post_id%></h1>
                 
