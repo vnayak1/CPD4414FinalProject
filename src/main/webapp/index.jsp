@@ -60,6 +60,11 @@ pageEncoding="ISO-8859-1"%>
 			</ul>
 		</div>
 	</div>
+    
+    <div class="article">
+			<img src="images/great-hairstyle.jpg" alt="">
+			<h1>Great hairstyle comes from the experts.</h1>
+		</div>
 	<div id="body">
                     <form action="/searchdata" method="post">
             City  <input type="text" name="city" value="sarnia">
@@ -122,19 +127,19 @@ pageEncoding="ISO-8859-1"%>
                         
                     </tr>
                     <tr>
-                        <td><b>User:</b><%=id%></td>
+                        <td><b>User:  </b><%=id%></td>
                     </tr>
                     <tr>
-                        <td>Address: <%=address%></td>
+                        <td><b>Address:  </b> <%=address%></td>
                     </tr>
                     <tr>
-                        <td>City: <%=city_display%></td>
+                        <td><b>City:  </b> <%=city_display%></td>
                     </tr>
                     <tr>
-                        <td>Country: <%=country_display%></td>
+                        <td><b>Country:  </b> <%=country_display%></td>
                     </tr>
                     <tr>
-                        <td>Detail about ad: <%=detail%></td>
+                        <td><b>Detail about ad:  </b> <%=detail%></td>
                     </tr>
                 </table>
            
