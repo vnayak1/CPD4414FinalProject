@@ -89,11 +89,12 @@ pageEncoding="ISO-8859-1"%>
             OutputStream os = response.getOutputStream();
             byte buf[] = new byte[(int) b.length()];
             is.read(buf);
+            os.write(buf);
            
            
                 %>
                 <h1><%=id%></h1>
-                <%= buf%>
+                <%=buf %>
                 
            
             <%
