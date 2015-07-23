@@ -3,6 +3,7 @@
     Created on : 23-Jul-2015, 1:10:06 AM
     Author     : vinayak
 --%>
+<%@page import="java.sql.Connection"%>
 <%-- 
     Document   : news
     Created on : 21-Jul-2015, 7:00:39 PM
@@ -36,16 +37,16 @@ pageEncoding="ISO-8859-1"%>
 			</div>
 			<ul>
 				<li  class="selected">
-					<a href="../index.html">home</a>
+					<a href="index.jsp">home</a>
 				</li>
 				<li>
-					<a href="../about.html">about</a>
+					<a href="about.html">about</a>
 				</li>
 				<li>
-					<a href="post.jsp">Post Ads</a>
+					<a href="../jsppost.jsp">Post Ads</a>
 				</li>
 				<li>
-                                    <a href="signup.jsp">Sign Up</a>
+                                    <a href="../jsp/signup.jsp">Sign Up</a>
 				</li>
 				<li>
                                     <a href="../jsp/login.jsp">Login</a>
@@ -54,7 +55,22 @@ pageEncoding="ISO-8859-1"%>
 		</div>
 	</div>
 	<div id="body">
-            
+            <%
+                
+                Connection conn = DatabaseCredentials.database.getConnection();
+                
+                if(conn==null)
+                {
+            %>
+                <h1> success</h1>
+            <%    
+                }else{
+             
+            %>
+                <h1>Fail</h1>
+            <%
+                }
+            %>    
                
 	</div>	
 	<div id="footer">
