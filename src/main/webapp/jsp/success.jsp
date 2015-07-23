@@ -66,11 +66,11 @@ pageEncoding="ISO-8859-1"%>
                     <%
                         } else{
                             
-                                                  <h1><%=session.getAttribute("success_message")%></h1>
+               
+                    %>
+                                                           <h1><%=session.getAttribute("success_message")%></h1>
                         <input type="text" name="user_id" value="<%=session.getAttribute("success_message")%>">
  
-                    %>
-                        
      
                     <%
                         }
