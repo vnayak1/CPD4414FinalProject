@@ -61,12 +61,14 @@ pageEncoding="ISO-8859-1"%>
                         if(session.getAttribute("success_message")==null) {
                     %>
                     
-                       <h1><%=session.getAttribute("success_message")%></h1>
-                        <input type="text" name="user_id" value="<%=session.getAttribute("success_message")%>">
  
                         
                     <%
                         } else{
+                            
+                                                  <h1><%=session.getAttribute("success_message")%></h1>
+                        <input type="text" name="user_id" value="<%=session.getAttribute("success_message")%>">
+ 
                     %>
                         
      
