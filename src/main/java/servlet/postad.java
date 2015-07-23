@@ -154,8 +154,8 @@ public class postad extends HttpServlet {
             
             if (row > 0) {
                
-                HttpSession  success = request.getSession(true);
-                success.setAttribute("success_message","Your Ad is posted successfully!");
+                HttpSession  success_ad = request.getSession(true);
+                success_ad.setAttribute("success_message","Your Ad is posted successfully!");
                 response.sendRedirect("jsp/success.jsp");
            }
         } catch (SQLException ex) {
