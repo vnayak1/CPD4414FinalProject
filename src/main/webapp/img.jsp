@@ -20,7 +20,7 @@
     <body>
      
                 <%
-                int img_id = Integer.parseInt(request.getParameter("id"));
+                int img_id = Integer.parseInt(request.getParameter("iid"));
                 Connection conn = DatabaseCredentials.database.getConnection();
                 
                 if(conn==null)
@@ -37,7 +37,7 @@
                 String query = "select image from post_ad where user_post_id ='"+img_id+"'";
                 ResultSet rs = smt.executeQuery(query);
                  while (rs.next()) {
-                String id = rs.getString("user_id");
+               // String id = rs.getString("user_id");
                 
                   Blob  b = rs.getBlob("image");            
             response.setContentType("image/jpeg");
@@ -51,7 +51,7 @@
            os.write(buf);
            
                 %>
-                <h1><%=id%></h1>
+                
                
                 
                 
