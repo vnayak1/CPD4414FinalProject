@@ -104,20 +104,35 @@ pageEncoding="ISO-8859-1"%>
                 ResultSet rs = smt.executeQuery(query);
                  while (rs.next()) {
                 String id = rs.getString("user_id");
+                String address = rs.getString("address");
+                String city_display = rs.getString("city");
+                String country_display = rs.getString("country");
+                String detail = rs.getString("detail");
                 int post_id = rs.getInt("user_post_id");
                 
           
            
                 %>
                 
-                <h1><%=city%></h1>
-                <h1><%=country%></h1>
-                <h1><%=id%></h1>
-                <h1><%=post_id%></h1>
-                
-                <img src="img.jsp?iid=<%=post_id%>" width="50" height="50"/>  
-                
-                
+             
+                <table>
+                    <tr>
+                        <td rowspan="4"><img src="img.jsp?iid=<%=post_id%>" width="100" height="100"/><td>  
+                        <td><h1><%=id%></h1></td>
+                    </tr>
+                    <tr>
+                        <td><h1><%=address%></h1></td>
+                    </tr>
+                    <tr>
+                        <td><h1><%=city_display%></h1></td>
+                    </tr>
+                    <tr>
+                        <td><h1><%=country_display%></h1></td>
+                    </tr>
+                    <tr>
+                        <td><h1><%=detail%></h1></td>
+                    </tr>
+                </table>
            
                 <%
                
