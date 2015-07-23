@@ -122,7 +122,7 @@ pageEncoding="ISO-8859-1"%>
                         
                     </tr>
                     <tr>
-                        <td>User: <%=id%></td>
+                        <td>User: </td><td><%=id%></td>
                     </tr>
                     <tr>
                         <td>Address: <%=address%></td>
