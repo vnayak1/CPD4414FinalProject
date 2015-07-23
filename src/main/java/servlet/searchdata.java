@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -76,7 +77,9 @@ public class searchdata extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
      //   processRequest(request, response);
-        
+        HttpSession  searchdatafor = request.getSession(true);
+        searchdatafor.setAttribute("data","data");
+                
         
         response.sendRedirect("index.jsp");
     }

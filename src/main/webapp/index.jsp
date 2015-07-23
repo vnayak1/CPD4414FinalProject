@@ -62,27 +62,38 @@ pageEncoding="ISO-8859-1"%>
 	</div>
 	<div id="body">
                     <form action="/searchdata" method="post">
-            City : <input type="text" name="city" value="sarnia">
-            Country :<input type="text" name="country" value="canada">
+            City  <input type="text" name="city" value="sarnia">
+            Country  <input type="text" name="country" value="canada">
                     <input type="submit" name="find" value="Find">
                     <form>
             
+                        
+                        
+                        
+                        
+                        <%
+                        if(session.getAttribute("data")==null) {
+                    %>
+                                   
+                         
+                
+                    <%
+                        } else {
+                            
+                                    
             
-            
-                       <%
+                       
                 
                 Connection conn = DatabaseCredentials.database.getConnection();
                 
                 if(conn==null)
                 {
-            %>
-                <h1> Fail</h1>
-            <%    
-                }else{
-             
-            %>
-                <h1>Success</h1>
-                <% 
+               
+                }
+                
+                else
+                {
+            
                 Statement smt = conn.createStatement();
                 String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad";
                 ResultSet rs = smt.executeQuery(query);
@@ -100,11 +111,15 @@ pageEncoding="ISO-8859-1"%>
                 
                 
            
-            <%
+                <%
                
-                 }
-                }
-            %>
+                                }
+                            }
+                        }
+                 %>
+                
+                                    
+                
            
                
 	</div>	
