@@ -87,7 +87,9 @@ pageEncoding="ISO-8859-1"%>
            
                 %>
                 <h1><%=id%></h1>
-                <img src="img.jsp?iid=post_id" width="50" height="50"/>  
+                <h1><%=post_id%></h1>
+                
+                <img src="img.jsp?iid=<%=post_id%>" width="50" height="50"/>  
                 
                 
            
