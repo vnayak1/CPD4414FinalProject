@@ -105,7 +105,7 @@ public class postad extends HttpServlet {
         out.println(country);
         out.println(detail);
          
-        InputStream inputStream = null; // input stream of the upload file
+       // InputStream inputStream = null; // input stream of the upload file
          
         // obtains the upload file part in this multipart request
 //        Part filePart = request.getPart("image");
@@ -119,56 +119,56 @@ public class postad extends HttpServlet {
 //            inputStream = filePart.getInputStream();
 //        }
          
-        Connection conn = null; // connection to the database
-        String message = null;  // message will be sent back to client
-         
-        try {
-            // connects to the database
-            
-            conn = database.getConnection();
- 
-            // constructs SQL statement
-            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?,?,?,?,?)";
-            PreparedStatement statement = conn.prepareStatement(sql);
-            statement.setString(1, user_id);
-            
-             
-                File image = new File(image1);
-                FileInputStream   fis = new FileInputStream(image);
-                statement.setBinaryStream(2, fis, (int) image.length());
-                statement.execute();
-//            if (inputStream != null) {
-//                
-//                statement.setBlob(2, inputStream);
-//            }
-            statement.setString(3, address);
-            statement.setString(4, city);
-            statement.setString(5, country);
-            statement.setString(6, detail);
- 
-            // sends the statement to the database server
-           // int row = statement.executeUpdate();
+//        Connection conn = null; // connection to the database
+//        String message = null;  // message will be sent back to client
+//         
+//        try {
+//            // connects to the database
 //            
-//            if (row > 0) {
-//                message = "File uploaded and saved into database";
-//                out.println("Success");
+//            conn = database.getConnection();
+// 
+//            // constructs SQL statement
+//            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?,?,?,?,?)";
+//            PreparedStatement statement = conn.prepareStatement(sql);
+//            statement.setString(1, user_id);
+//            
+//             
+//                File image = new File(image1);
+//                FileInputStream   fis = new FileInputStream(image);
+//                statement.setBinaryStream(2, fis, (int) image.length());
+//                statement.execute();
+////            if (inputStream != null) {
+////                
+////                statement.setBlob(2, inputStream);
+////            }
+//            statement.setString(3, address);
+//            statement.setString(4, city);
+//            statement.setString(5, country);
+//            statement.setString(6, detail);
+// 
+//            // sends the statement to the database server
+//           // int row = statement.executeUpdate();
+////            
+////            if (row > 0) {
+////                message = "File uploaded and saved into database";
+////                out.println("Success");
+////            }
+//        } catch (SQLException ex) {
+//            message = "ERROR: " + ex.getMessage();
+//            ex.printStackTrace();
+//        } finally {
+//            if (conn != null) {
+//                // closes the database connection
+//                try {
+//                    conn.close();
+//                } catch (SQLException ex) {
+//                    ex.printStackTrace();
+//                }
 //            }
-        } catch (SQLException ex) {
-            message = "ERROR: " + ex.getMessage();
-            ex.printStackTrace();
-        } finally {
-            if (conn != null) {
-                // closes the database connection
-                try {
-                    conn.close();
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        }
-            // sets the message in request scope
-            request.setAttribute("Message", message);
-             
+//        }
+//            // sets the message in request scope
+//            request.setAttribute("Message", message);
+//             
             // forwards to the message page
           //  getServletContext().getRequestDispatcher("/Message.jsp").forward(request, response);
         
