@@ -59,13 +59,14 @@ pageEncoding="ISO-8859-1"%>
 				</li>
 			</ul>
 		</div>
-	</div>
+	
     
     <div class="article">
 			<img src="images/great-hairstyle.jpg" alt="">
 			<h1>Great hairstyle comes from the experts.</h1>
 		</div>
-	<div id="body">
+            </div>
+   <div id="body">
                     <form action="/searchdata" method="post">
             City  <input type="text" name="city" value="sarnia">
             Country <input type="text" name="country" value="canada">
