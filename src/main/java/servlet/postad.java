@@ -107,17 +107,17 @@ public class postad extends HttpServlet {
          
         InputStream inputStream = null; // input stream of the upload file
          
-        // obtains the upload file part in this multipart request
-//        Part filePart = request.getPart("image");
-//        if (filePart != null) {
-//            // prints out some information for debugging
-//            System.out.println(filePart.getName());
-//            System.out.println(filePart.getSize());
-//            System.out.println(filePart.getContentType());
-//             
-//            // obtains input stream of the upload file
-//            inputStream = filePart.getInputStream();
-//        }
+       
+        Part filePart = request.getPart("image");
+        if (filePart != null) {
+            
+            out.println(filePart.getName());
+            out.println(filePart.getSize());
+            out.println(filePart.getContentType());
+             
+            
+            inputStream = filePart.getInputStream();
+        }
          
         Connection conn = null; // connection to the database
         String message = null;  // message will be sent back to client
@@ -133,21 +133,21 @@ public class postad extends HttpServlet {
             statement.setString(1, user_id);
             
              
-                File image = new File(image1);
-                FileInputStream   fis = new FileInputStream(image.getAbsolutePath());
-                statement.setBinaryStream(2, fis, (int) image.length());
-                statement.execute();
-//            if (inputStream != null) {
-//                
-//                statement.setBlob(2, inputStream);
-//            }
+//                File image = new File(image1);
+//                FileInputStream   fis = new FileInputStream(image.getAbsolutePath());
+//                statement.setBinaryStream(2, fis, (int) image.length());
+//                statement.execute();
+             if (inputStream != null) {
+               
+              statement.setBlob(2, inputStream);
+            }
             statement.setString(3, address);
             statement.setString(4, city);
             statement.setString(5, country);
             statement.setString(6, detail);
  
             // sends the statement to the database server
-           // int row = statement.executeUpdate();
+           int row = statement.executeUpdate();
 //            
 //            if (row > 0) {
 //                message = "File uploaded and saved into database";
