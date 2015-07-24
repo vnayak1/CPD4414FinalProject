@@ -26,7 +26,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-        <title>News</title>
+        <title>Home</title>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
 
         <style type="text/css">

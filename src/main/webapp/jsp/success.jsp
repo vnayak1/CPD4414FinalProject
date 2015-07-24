@@ -19,7 +19,7 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Hairstyle</title>
+	<title>Account created</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
         
                 <style type="text/css">
@@ -31,14 +31,14 @@ pageEncoding="ISO-8859-1"%>
 	<div id="header">
 		<div class="section">
 			<div class="logo">
-				<a href="../index.html">Wish Finder</a>
+				<a href="../index.jsp">Wish Finder</a>
 			</div>
 			<ul>
 				<li>
 					<a href="../index.jsp">home</a>
 				</li>
 				<li>
-					<a href="../about.html">about</a>
+					<a href="about.jsp">about</a>
 				</li>
 				<li>
 					<a href="post.jsp">Post Ads</a>
