@@ -43,8 +43,8 @@
     <body>
         <div id="header">
             <div class="section">
-                <ul><li>Username<li><ul>
-                <ul><li><a href="../jsp/logout.jsp"><li><ul>
+                Username
+                <a href="../jsp/logout.jsp">
                 
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
