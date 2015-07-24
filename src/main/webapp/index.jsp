@@ -31,7 +31,12 @@ pageEncoding="ISO-8859-1"%>
         
         <style type="text/css">
             
-   
+            #imagetd{
+                
+                
+                border: solid black 2px;  
+                
+            }
             
         </style>
 </head>
@@ -68,8 +73,8 @@ pageEncoding="ISO-8859-1"%>
             </div>
    <div id="body">
                     <form action="/searchdata" method="post">
-            City  <input type="text" name="city" value="sarnia">
-            Country <input type="text" name="country" value="canada">
+           <b>City  </b> <input type="text" name="city" value="sarnia">
+            <b>Country  </b> <input type="text" name="country" value="canada">
                     <input type="submit" name="find" value="Find">
                     <form>
             
@@ -124,7 +129,7 @@ pageEncoding="ISO-8859-1"%>
                 <br><br><br>
                 <table>
                     <tr>
-                        <td rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
+                        <td id="imagetd" rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
                         
                     </tr>
                     <tr>
