@@ -43,9 +43,10 @@
     <body>
         <div id="header">
             <div class="section">
-                Username
-                <a href="../jsp/logout.jsp">
-                
+                 <% if (session.getAttribute("name") == null){}else{%>
+                Hello <%= session.getAttribute("name")%>
+                <a href="../jsp/logout.jsp">Logout</a>
+                <% }%>
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
                 </div>

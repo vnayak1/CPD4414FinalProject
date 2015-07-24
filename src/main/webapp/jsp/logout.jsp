@@ -62,10 +62,11 @@ pageEncoding="ISO-8859-1"%>
         
         HEllo    
                 
-                
-                
-                
-                
+                <%
+              session.invalidate();
+              response.sendRedirect("../index.jsp");
+                %>
+                    
 		
 	</div>
 	<div id="footer">
