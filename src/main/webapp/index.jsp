@@ -43,6 +43,9 @@
     <body>
         <div id="header">
             <div class="section">
+                <ul><li>Username<li><ul>
+                <ul><li><a href="../jsp/logout.jsp"><li><ul>
+                
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
                 </div>
@@ -160,7 +163,7 @@
 
                     <%
 
-                                } if (empty){ %>  <h1> No match found!</h1> <%}
+            } if (empty){ %>  <h3 style="color:#ff6666"> No match found!</h3> <%}
                             }
                         }
                     %>
