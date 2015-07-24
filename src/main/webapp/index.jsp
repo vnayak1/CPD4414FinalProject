@@ -44,8 +44,8 @@
         <div id="header">
             <div class="section">
                  <% if (session.getAttribute("name") == null){}else{%>
-                <h2 style="color:red">Hello <%= session.getAttribute("name")%>
-                <a href="../jsp/logout.jsp">Logout</a></h2>
+                <h4 style="color:red; text-align:right">Hello <%= session.getAttribute("name")%>
+                <a href="../jsp/logout.jsp">Logout</a></h4>
                 <% }%>
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
@@ -88,7 +88,7 @@
         <div id="body">
             
             <h1> Find your apartment here! </h1>
-            <h1></h1>
+            <br><br>
             
             <form action="/searchdata" method="post">
                 <b>City  </b> <input type="text" name="city" value="sarnia">
