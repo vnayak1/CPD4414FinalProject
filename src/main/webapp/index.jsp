@@ -44,14 +44,14 @@
         <div id="header">
             <div class="section">
                 <div class="logo">
-                    <a href="../index.html">WISH FINDER</a>
+                    <a href="index.jsp">WISH FINDER</a>
                 </div>
                 <ul>
                     <li  class="selected">
                         <a href="index.jsp">home</a>
                     </li>
                     <li>
-                        <a href="../about.jsp">about</a>
+                        <a href="../jsp/about.jsp">about</a>
                     </li>
                     <li>
                         <a href="../jsp/post.jsp">Post Ads</a>
