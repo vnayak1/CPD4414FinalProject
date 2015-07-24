@@ -100,6 +100,7 @@ public class postad extends HttpServlet {
         String city = request.getParameter("city");
         String country = request.getParameter("country");
         String detail = request.getParameter("detail");
+        String email = request.getParameter("email");
         
         out.println(image1);
         out.println(user_id);
@@ -131,7 +132,7 @@ public class postad extends HttpServlet {
             conn = database.getConnection();
  
             // constructs SQL statement
-            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail) values (?, ?,?,?,?,?)";
+            String sql = "INSERT INTO post_ad (user_id, image, address,city,country,detail,email) values (?, ?,?,?,?,?,?)";
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, user_id);
             
@@ -148,6 +149,7 @@ public class postad extends HttpServlet {
             statement.setString(4, city);
             statement.setString(5, country);
             statement.setString(6, detail);
+            statement.setString(7, email);
  
             // sends the statement to the database server
            int row = statement.executeUpdate();

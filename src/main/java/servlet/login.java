@@ -93,16 +93,18 @@ public class login extends HttpServlet {
         out.println(password);
 
         String id = null;
+        String email =null;
        
 
         Connection conn = database.getConnection();
         Statement smt;
         try {
             smt = conn.createStatement();
-            String sql = "SELECT user_id, password FROM user where user_id='" + username + "' and password='" + password + "'";
+            String sql = "SELECT user_id, email FROM user where user_id='" + username + "' and password='" + password + "'";
             ResultSet rs = smt.executeQuery(sql);
             while (rs.next()) {
                 id = rs.getString("user_id");
+                email = rs.getString("email");
                 
             }
             
@@ -111,6 +113,8 @@ public class login extends HttpServlet {
                 out.println("Login Success");
                 HttpSession  success = request.getSession(true);
                 success.setAttribute("name",id);
+                success.setAttribute("email",email);
+                
 
                 response.sendRedirect("index.jsp");
             } else {
