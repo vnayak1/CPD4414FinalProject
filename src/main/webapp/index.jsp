@@ -44,8 +44,8 @@
         <div id="header">
             <div class="section">
                  <% if (session.getAttribute("name") == null){}else{%>
-                <h4 style="color:red; text-align:right">Hello <%= session.getAttribute("name")%>
-                <a href="../jsp/logout.jsp">Logout</a></h4>
+                 <h6 style="color:#660066; text-align:right">Hello <%= session.getAttribute("name")%>
+                <a href="../jsp/logout.jsp">Logout</a></h6>
                 <% }%>
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
