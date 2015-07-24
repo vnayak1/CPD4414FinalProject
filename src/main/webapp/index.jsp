@@ -67,7 +67,7 @@
                         if(session.getAttribute("name")==null) {}else{
                     %>
                       <li>
-                        <a href="../jsp/logout.jsp">Logout</a>
+                        <a href="../jsp/logout.jsp">L</a>
                     </li>
                                 
                       <% } %>        
@@ -121,7 +121,7 @@
                             String country = (String) session.getAttribute("country");
 
                             Statement smt = conn.createStatement();
-                            String query = "select user_post_id,user_id,image,address,city,country,detail from post_ad where city='" + city + "' and country = '" + country + "'";
+                            String query = "select user_post_id,user_id,image,address,city,country,detail,email from post_ad where city='" + city + "' and country = '" + country + "'";
                             ResultSet rs = smt.executeQuery(query);
                             while (rs.next()) {
                                 String id = rs.getString("user_id");
@@ -129,6 +129,7 @@
                                 String city_display = rs.getString("city");
                                 String country_display = rs.getString("country");
                                 String detail = rs.getString("detail");
+                                String email = rs.getString("email");
                                 int post_id = rs.getInt("user_post_id");
 
 
@@ -138,7 +139,7 @@
                     <br><br><br>
                     <table>
                         <tr>
-                            <td id="imagetd" rowspan="6"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
+                            <td id="imagetd" rowspan="7"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
 
                         </tr>
                         <tr>
@@ -155,6 +156,9 @@
                         </tr>
                         <tr>
                             <td><b>Detail about ad:  </b> <%=detail%></td>
+                        </tr>
+                        <tr>
+                            <td><b>Email:  </b> <%=email%></td>
                         </tr>
                     </table>
 
