@@ -89,7 +89,7 @@
                 <b>City  </b> <input type="text" name="city" value="sarnia">
                 <b>Country  </b> <input type="text" name="country" value="canada">
                 <input type="submit" name="find" value="Find">
-                <form>
+                </form>
 
 
 
@@ -119,7 +119,7 @@
                             
                            if (!rs.next()){
                                %>
-                               <h2> No match found!/h2>
+                               <h2> No match found!</h2>
                                 <%
                                
                                 }
