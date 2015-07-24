@@ -40,11 +40,11 @@ pageEncoding="ISO-8859-1"%>
 	<div id="header">
 		<div class="section">
 			<div class="logo">
-				<a href="../index.html">WISH FINDER</a>
+				<a href="../index.jsp">WISH FINDER</a>
 			</div>
 			<ul>
 				<li>
-					<a href="../index.html">home</a>
+					<a href="../index.jsp">home</a>
 				</li>
 				<li>
 					<a href="about.jsp">about</a>
