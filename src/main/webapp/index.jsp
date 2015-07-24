@@ -51,7 +51,7 @@
                         <a href="index.jsp">home</a>
                     </li>
                     <li>
-                        <a href="about.html">about</a>
+                        <a href="../about.jsp">about</a>
                     </li>
                     <li>
                         <a href="../jsp/post.jsp">Post Ads</a>
@@ -133,7 +133,7 @@
 
                         </tr>
                         <tr>
-                            <td><b>User:  </b><%=id%></td>
+                            <td><b>Name:  </b><%=id%></td>
                         </tr>
                         <tr>
                             <td><b>Address:  </b> <%=address%></td>

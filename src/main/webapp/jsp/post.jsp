@@ -76,11 +76,11 @@ pageEncoding="ISO-8859-1"%>
                             
                         <form action="/postad" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="user_id" value="<%=session.getAttribute("name")%>">
-                            <label id="imagelabel" for="image">Image<input type="file" value="" name="image" required/></label><br>
-                            <label for="address">Address<input type="text" value="" name="address" required/></label><br>
-                            <label for="city">City<input type="text" value="" name="city" required/></label><br>
-                            <label for="country">Country<input type="text" value="" name="country" required/></label><br>
-                            <label for="detail">Detail<input type="text" value="" name="detail" required/></label><br>
+                            <label id="imagelabel" for="image">Image  <input type="file" value="" name="image" required/></label><br>
+                            <label for="address">Address  <input type="text" value="" name="address" required/></label><br>
+                            <label for="city">City  <input type="text" value="" name="city" required/></label><br>
+                            <label for="country">Country  <input type="text" value="" name="country" required/></label><br>
+                            <label for="detail">Message  <input type="text" value="" name="detail" required/></label><br>
                             <label for="signup"><input type="submit" name="signup" value="Post It"></label>
                         <form>
                     <%
