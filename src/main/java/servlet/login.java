@@ -112,7 +112,7 @@ public class login extends HttpServlet {
                 HttpSession  success = request.getSession(true);
                 success.setAttribute("name",id);
 
-                response.sendRedirect("jsp/signup.jsp");
+                response.sendRedirect("jsp/index.jsp");
             } else {
                 out.println("Login Failed");
                 HttpSession  fail = request.getSession(true);
