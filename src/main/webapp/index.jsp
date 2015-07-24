@@ -47,7 +47,7 @@
                     <a href="index.jsp">WISH FINDER</a>
                 </div>
                 <ul>
-                    <li  class="selected">
+                    <li>
                         <a href="index.jsp">home</a>
                     </li>
                     <li>
