@@ -117,12 +117,7 @@
                             String query = "select user_post_id,user_id,image,address,city,country,detail,email from post_ad where city='" + city + "' and country = '" + country + "'";
                             ResultSet rs = smt.executeQuery(query);
                             
-                           if (!rs.next()){
-                               %>
-                               <h2> No match found!</h2>
-                                <%
-                               
-                                }
+                      
                             
                             while (rs.next()) {
                                 String id = rs.getString("user_id");
