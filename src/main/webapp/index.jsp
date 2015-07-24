@@ -66,7 +66,7 @@
             </div>
             
                     <%
-                        if (session.getAttribute("city") == null || session.getAttribute("country") == null) {}else{
+                        if (session.getAttribute("city") == null || session.getAttribute("country") == null) {
                     %>
 
 
@@ -74,10 +74,15 @@
                 <img src="images/great-hairstyle.jpg" alt="">
                 <h1>Great hairstyle comes from the experts.</h1>
             </div>
-                    <%}%>
+                    <%
+                    }else{    
+                    }%>
                     
         </div>
         <div id="body">
+            
+            <h1> Find your apartment here! <h1>
+            
             <form action="/searchdata" method="post">
                 <b>City  </b> <input type="text" name="city" value="sarnia">
                 <b>Country  </b> <input type="text" name="country" value="canada">
