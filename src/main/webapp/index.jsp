@@ -62,6 +62,15 @@
                     <li>
                         <a href="../jsp/login.jsp">Login</a>
                     </li>
+                    
+                    <%
+                        if(session.getAttribute("name")==null) {}else{
+                    %>
+                      <li>
+                        <a href="../jsp/logout.jsp">Logout</a>
+                    </li>
+                                
+                      <% } %>        
                 </ul>
             </div>
             
