@@ -111,7 +111,7 @@ pageEncoding="ISO-8859-1"%>
                     <br><br><br>
                     <table>
                         <tr>
-                            <td id="imagetd" rowspan="7"><img src="../img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
+                            <td id="imagetd" rowspan="8"><img src="../img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
 
                         </tr>
                         <tr>
@@ -131,6 +131,9 @@ pageEncoding="ISO-8859-1"%>
                         </tr>
                         <tr>
                             <td><b>Email:  </b> <%=email%></td>
+                        </tr>
+                        <tr>
+                            <td><b><a href="delete.jsp?id=<%=post_id%>">Delete Post</a></b></td>
                         </tr>
                     </table>
 
