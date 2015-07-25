@@ -21,7 +21,7 @@
                 Connection conn = DatabaseCredentials.database.getConnection();
                                             
                 Statement smt = conn.createStatement();
-                String query = "delere from post_ad where user_post_id ='"+post_id+"'";
+                String query = "delete from post_ad where user_post_id ='"+post_id+"'";
                  smt.executeUpdate(query);
                 
                 response.sendRedirect("about.jsp");
