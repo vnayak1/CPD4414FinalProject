@@ -33,15 +33,15 @@ pageEncoding="ISO-8859-1"%>
                     margin-left:5px;
                     margin-right:0px;
 
-
+            }
             #imagetd{
 
 
-                border: solid black 2px;  
+                border: solid black 1px;  
 
             }
 
-            }
+            
             
         </style>
 </head>
