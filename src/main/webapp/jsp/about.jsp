@@ -111,7 +111,7 @@ pageEncoding="ISO-8859-1"%>
                     <br><br><br>
                     <table>
                         <tr>
-                            <td id="imagetd" rowspan="7"><img src="img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
+                            <td id="imagetd" rowspan="7"><img src="../img.jsp?iid=<%=post_id%>" width="200" height="200"/><td>  
 
                         </tr>
                         <tr>
