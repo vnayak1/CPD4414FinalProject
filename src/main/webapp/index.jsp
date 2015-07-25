@@ -68,15 +68,18 @@
                 </ul>
             </div>
             
-                    <%
-                        if (session.getAttribute("city") == null || session.getAttribute("country") == null) {
-                    %>
-
-                    
                           <% if (session.getAttribute("name") == null){}else{%>
                  <h4 style="color:#660066; text-align:right">Hello <%= session.getAttribute("name")%>
                 <a href="../jsp/logout.jsp">Logout</a></h4>
                 <% }%>
+            
+                    <%
+                        
+                        if (session.getAttribute("city") == null || session.getAttribute("country") == null) {
+                    %>
+
+                    
+             
             <div class="article">
                 <img src="images/great-hairstyle.jpg" alt="">
                 <h1>Great hairstyle comes from the experts.</h1>
