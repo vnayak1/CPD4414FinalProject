@@ -37,7 +37,7 @@ pageEncoding="ISO-8859-1"%>
             #imagetd{
 
 
-                border: solid black 1px;  
+                border: solid black 2px;  
 
             }
 
