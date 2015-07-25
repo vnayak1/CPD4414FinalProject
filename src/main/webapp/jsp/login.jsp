@@ -90,7 +90,7 @@ pageEncoding="ISO-8859-1"%>
 	<div id="footer">
 		<div>
 			<p>
-				&copy; copyright 2023 | all rights reserved.
+				&copy; copyright 2015 | all rights reserved.
 			</p>
 		</div>
 	</div>
