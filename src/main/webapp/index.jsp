@@ -52,7 +52,7 @@
                         <a href="index.jsp">home</a>
                     </li>
                     <li>
-                        <a href="../jsp/about.jsp">about</a>
+                        <a href="../jsp/about.jsp">Your Ads</a>
                     </li>
                     <li>
                         <a href="../jsp/post.jsp">Post Ads</a>

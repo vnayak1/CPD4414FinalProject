@@ -50,7 +50,7 @@ pageEncoding="ISO-8859-1"%>
 					<a href="../index.jsp">home</a>
 				</li>
 				<li class="selected">
-                                    <a href="about.jsp">about</a>
+                                    <a href="about.jsp">Your Ads</a>
 				</li>
 				<li>
 					<a href="post.jsp">Post Ads</a>
