@@ -43,10 +43,7 @@
     <body>
         <div id="header">
             <div class="section">
-                 <% if (session.getAttribute("name") == null){}else{%>
-                 <h6 style="color:#660066; text-align:right">Hello <%= session.getAttribute("name")%>
-                <a href="../jsp/logout.jsp">Logout</a></h6>
-                <% }%>
+           
                 <div class="logo">
                     <a href="index.jsp">WISH FINDER</a>
                 </div>
@@ -75,7 +72,11 @@
                         if (session.getAttribute("city") == null || session.getAttribute("country") == null) {
                     %>
 
-
+                    
+                          <% if (session.getAttribute("name") == null){}else{%>
+                 <h6 style="color:#660066; text-align:right">Hello <%= session.getAttribute("name")%>
+                <a href="../jsp/logout.jsp">Logout</a></h6>
+                <% }%>
             <div class="article">
                 <img src="images/great-hairstyle.jpg" alt="">
                 <h1>Great hairstyle comes from the experts.</h1>
