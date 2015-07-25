@@ -82,7 +82,7 @@
              
             <div class="article">
                 <img src="images/dream.png" alt="">
-                <h1>Great hairstyle comes from the experts.</h1>
+                <h1>Fin your dream home anywhere anytime</h1>
             </div>
                     <%
                     }else{    
