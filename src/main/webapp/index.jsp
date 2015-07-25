@@ -81,7 +81,7 @@
                     
              
             <div class="article">
-                <img src="images/great-hairstyle.jpg" alt="">
+                <img src="images/dream.png" alt="">
                 <h1>Great hairstyle comes from the experts.</h1>
             </div>
                     <%
