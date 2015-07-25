@@ -22,7 +22,7 @@
                                             
                 Statement smt = conn.createStatement();
                 String query = "delere from post_ad where user_post_id ='"+post_id+"'";
-                ResultSet rs = smt.executeQuery(query);
+                 smt.executeUpdate(query);
                 
                 response.sendRedirect("about.jsp");
         %>        
