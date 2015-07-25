@@ -81,7 +81,7 @@ pageEncoding="ISO-8859-1"%>
                             <label for="address">Address  <input type="text" value="" name="address" required/></label><br>
                             <label for="city">City  <input type="text" value="" name="city" required/></label><br>
                             <label for="country">Country  <input type="text" value="" name="country" required/></label><br>
-                            <label for="detail">Message  <input type="textarea" value="" name="detail" required/></label><br>
+                            <label for="detail">Message  <textarea value="" name="detail" required/></label><br>
                             <label for="signup"><input type="submit" name="signup" value="Post It"></label>
                         <form>
                     <%

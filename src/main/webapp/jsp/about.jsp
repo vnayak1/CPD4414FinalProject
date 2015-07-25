@@ -34,6 +34,12 @@ pageEncoding="ISO-8859-1"%>
                     margin-right:0px;
 
 
+            #imagetd{
+
+
+                border: solid black 1px;  
+
+            }
 
             }
             
