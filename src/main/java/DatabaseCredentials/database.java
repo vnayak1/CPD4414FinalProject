@@ -15,8 +15,12 @@ import java.sql.SQLException;
  */
 public class database {
     
-   
-       public static Connection getConnection() {
+    /**
+     * @param conn
+     * @param jdbc
+     * @return connection when connection is established
+     */
+    public static Connection getConnection() {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
