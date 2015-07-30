@@ -95,8 +95,8 @@
             <br><br>
             
             <form action="/searchdata" method="post">
-                <b>City  </b> <input type="text" name="city" value="sarnia">
-                <b>Country  </b> <input type="text" name="country" value="canada">
+                <b>City  </b> <input type="text" name="city" value="">
+                <b>Country  </b> <input type="text" name="country" value="">
                 <input type="submit" name="find" value="Find">
                 </form>
 

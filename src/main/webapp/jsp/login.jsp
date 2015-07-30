@@ -65,8 +65,8 @@ pageEncoding="ISO-8859-1"%>
                     
             
                                     <form action="/login" method="post">
-                                        <label for="username"> Username:  <input type="text" id="username" name="username" value="vinayak" required></label><br>
-                                        <label for="password">Password:  <input type="password" id="password" name="password" value="vinayak" required></label><br>
+                                        <label for="username"> Username:  <input type="text" id="username" name="username" value="" required></label><br>
+                                        <label for="password">Password:  <input type="password" id="password" name="password" value="" required></label><br>
                          <label for="submit"><input type="submit" name="submit" id="submit"></label>
                     </form>
                     
