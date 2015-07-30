@@ -77,6 +77,16 @@ public class postad extends HttpServlet {
     /**
      * Handles the HTTP <code>POST</code> method.
      *
+     * @param image1
+     * @param user_id
+     * @param address
+     * @param city
+     * @param country
+     * @param detail
+     * @param email
+     * @param conn
+     * @param inputStream
+     * @param filePart
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs

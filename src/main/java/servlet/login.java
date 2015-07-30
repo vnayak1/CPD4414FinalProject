@@ -69,12 +69,14 @@ public class login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+      //  processRequest(request, response);
     }
 
     /**
      * Handles the HTTP <code>POST</code> method.
      *
+     * @param username
+     * @param password
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs

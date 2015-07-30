@@ -76,6 +76,12 @@ public class signup extends HttpServlet {
      *
      * @param request servlet request
      * @param response servlet response
+     * @param user_id
+     * @param username
+     * @param password
+     * @param email
+     * @param age_new
+     * @param conn
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
