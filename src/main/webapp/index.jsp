@@ -163,7 +163,7 @@
                             <td><b>Detail about ad:  </b> <%=detail%></td>
                         </tr>
                         <tr>
-                            <td><b>Email:  </b> <%=email%></td>
+                            <td><b>Email:  </b> <a href="mailto:<%=email%>" target="_top"><%=email%></a></td>
                         </tr>
                     </table>
 
