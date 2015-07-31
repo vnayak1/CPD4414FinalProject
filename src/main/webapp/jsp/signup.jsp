@@ -68,7 +68,7 @@ pageEncoding="ISO-8859-1"%>
                         if (session.getAttribute("success_message") ==null ) {}else{
                     %>
                     
-                    <h1>Please choose different user id</h1>
+                      <h1>Please choose different user id</h1>
                     <%
                     
                         }

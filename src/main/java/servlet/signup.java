@@ -117,11 +117,12 @@ public class signup extends HttpServlet {
             
             while(rs.next()){
             
+                HttpSession  accountmessage = request.getSession(true);
+            accountmessage.setAttribute("success_message","Please choose diffrent user id");  
+            
                 
             response.sendRedirect("jsp/signup.jsp");
             
-            HttpSession  accountmessage = request.getSession(true);
-            accountmessage.setAttribute("message","Please choose diffrent user id");  
             
             }
             
