@@ -63,7 +63,21 @@ pageEncoding="ISO-8859-1"%>
 	</div>
 	<div id="body">
             
-               
+                    <%
+                        
+                        if (session.getAttribute("success_message") ==null ) {}else{
+                    %>
+                    
+                    <h1>Your account is created</h1>
+                    <%
+                    
+                        }
+                    
+                    %>
+                
+            
+            
+            
                     <%
                         if(session.getAttribute("name")==null) {
                     %>

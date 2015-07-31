@@ -19,6 +19,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -118,7 +119,10 @@ public class signup extends HttpServlet {
             
                 
             response.sendRedirect("jsp/signup.jsp");
-                
+            
+            HttpSession  accountmessage = request.getSession(true);
+            accountmessage.setAttribute("message","Please choose diffrent user id");  
+            
             }
             
             
