@@ -110,6 +110,18 @@ public class signup extends HttpServlet {
         try {
             out.println("d");
             smt = conn.createStatement();
+            
+            String check = "select username from user where user_id = '"+user_id+"'";
+            ResultSet rs = smt.executeQuery(check);
+            
+            while(rs.next()){
+            
+                
+            response.sendRedirect("jsp/signup.jsp");
+                
+            }
+            
+            
             String sql = "INSERT INTO user (user_id, username, password,email,age) "
                     + "VALUES ('" + user_id + "', '" + username + "', '" + password + "','"+email+"','"+age+"')";
             out.println("ddddd");

@@ -1,0 +1,10 @@
+Name: vinayak shastri
+id:c0651659
+
+Final project
+
+openshift:   http://wishfinder-c0651659.rhcloud.com
+
+git hub :  https://github.com/vnayak1/CPD4414FinalProject
+
+  
